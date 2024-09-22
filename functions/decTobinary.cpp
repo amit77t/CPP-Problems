@@ -18,6 +18,7 @@ void decTobin(int decNum)
 
 }
 
+
 int main()
 {
     decTobin(16);
