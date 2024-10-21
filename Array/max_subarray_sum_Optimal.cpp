@@ -6,7 +6,7 @@ void max_sub_array_sum(int arr[], int n)
 {
 
 
-    int maxSum=INT_MIN;
+    int maxSum=INT16_MIN;
    for(int s=0; s<n ; s++)
    {    int currSum=0;
       for(int e=s; e<n ;e++)
