@@ -3,11 +3,11 @@
 #include<vector>
 using namespace std;
 
-vector<vector<int>> threeSum(vector<int> nums)
+vector<vector<int> > threeSum(vector<int> nums)
 {
    int n=nums.size();
    sort(nums.begin(), nums.end());
-   vector<vector<int>> ans;
+   vector<vector<int> > ans;
    for(int i=0; i<n; i++){
     if( i>0 && nums[i-1]==nums[i])
     {
@@ -53,7 +53,7 @@ int main()
 {
     vector<int> nums={-1,0,1,2,-1,-4};
 
-    vector<vector<int>> m=threeSum(nums);
+    vector<vector<int> > m=threeSum(nums);
 
     cout<<m[0][0]<<endl;
 
