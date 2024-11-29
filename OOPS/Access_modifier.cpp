@@ -2,7 +2,8 @@
 using namespace std;
 
 class Student{
-    public: // access modifier
+
+public: // access modifier
 
     string name;
     float cgpa;
