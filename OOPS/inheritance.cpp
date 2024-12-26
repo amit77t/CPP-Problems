@@ -31,6 +31,6 @@ int main(){
  f1.fins=3;
  f1.swim();
  f1.eat();
- f1.breathe();
+ f1.breathe(); 
  return 0;
 }
