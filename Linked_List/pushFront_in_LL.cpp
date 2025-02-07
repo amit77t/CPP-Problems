@@ -35,8 +35,9 @@ public:
         if(head==NULL)
         {
             head=tail=newNode;
-    }
-    else{
+        }
+    else
+    {
         newNode->next=head;
         head=newNode;
     }
