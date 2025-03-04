@@ -88,8 +88,8 @@ int main(){
   ll.push_front(2);
   ll.push_front(1);
 
-   ll.tail->next=ll.head;
-   isCycle(ll.head);
+  ll.tail->next=ll.head;
+  isCycle(ll.head);
 
 
 
