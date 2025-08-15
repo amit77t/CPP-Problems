@@ -15,56 +15,41 @@ public:
     }
 };
 
-void inorder(Node* root)
+Node* buildBstFromSorted(int arr[], int st, int end)
+{
+    if(st>end)
+    {
+        return NULL;
+    }
+
+    int mid=st+(end-st)/2;
+    Node* curr=new Node(arr[mid]);
+
+    curr->left=buildBstFromSorted(arr, st, mid-1);
+    curr->right=buildBstFromSorted(arr, mid+1, end);
+
+    return curr;
+}
+
+void preorder(Node* root)
 {
     if(root==NULL)
     {
-        return;
+        return ;
     }
 
-    inorder(root->left);
+    preorder(root->left);
     cout<<root->data<<" ";
-    inorder(root->right);
-
-
+    preorder(root->right);
 }
-
-Node* insert(Node* root, int val)
-{
-    if(root==NULL)
-    {
-        root=new Node(val);
-        return root;
-    }
-
-    if(val< root->data)
-    {
-         root->left=insert(root->left, val);
-    }
-    else{
-        root->right=insert(root->right, val);
-    }
-    return root;
-}
-
-Node* buildBST(int arr[], int n)
-{
-    Node* root=NULL;
-    for(int i=0; i<n ; i++)
-    {
-        root=insert(root,arr[i]);
-    }
-    return root;
-}
-
 
 
 int main()
 {
-     int arr[6]= {5,1,3,4,2,7};
+     int arr[7]= {3,4,5,6,7,8,9};
      int size=sizeof(arr)/sizeof(int);
-     Node* root=buildBST(arr,size);
-    inorder(root);
+     Node* root=buildBstFromSorted(arr,0,6);
+    preorder(root);
 
     return 0;
 }
