@@ -1,0 +1,11 @@
+# Ignore all exe files
+*.exe
+
+# Ignore object files
+*.o
+
+# Ignore compiled binary files
+*.out
+
+# Ignore VSCode settings if you don’t want to push them
+.vscode/
