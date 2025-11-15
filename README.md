@@ -1,7 +1,7 @@
 # 🚀 DSA in C++  
 
 This repository is my personal collection of **Data Structures & Algorithms (DSA) problems solved in C++**.  
-I use this space to practice and improve problem-solving skills, strengthen my understanding of core con cepts, and prepare for **coding interviews**.  
+I use this space to practice and improve problem-solving skills, strengthen my understanding of core concepts, and prepare for **coding interviews**.  
 
 ---
 
@@ -32,4 +32,4 @@ This repo reflects my **daily coding practice and learning journey** in masterin
 
 ---
 
-## Thank you 🙏😊✨
+## Thank you visiting 🙏😊✨
