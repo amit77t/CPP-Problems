@@ -13,7 +13,7 @@ public:
         int n = s.length();
         unordered_map<char, int> freq;
 
-        // Count frequencies
+        
         for (int i = 0; i < n; i++) {
             freq[s[i]]++;
         }
@@ -21,7 +21,7 @@ public:
         int maxFreqV = 0;
         int maxFreqC = 0;
 
-        // Find max freq among vowels and consonants
+      
         for (auto it : freq) {
             if (isVowel(it.first)) {
                 if (it.second > maxFreqV) {
